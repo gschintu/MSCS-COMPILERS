@@ -1,7 +1,6 @@
 # MSCS-COMPILERS
 Graduate School - Compilers Course
 
-
 ## COSC 561
 1. csem - semantic routines for C programs
 2. csem reads a C program (actually a subset of C) from its standard input and compiles it into LLVM intermediate representation (IR) on its standard output. It should support the following program constructs and statements in the C programming language:
@@ -12,7 +11,14 @@ Graduate School - Compilers Course
   <img alt="" src="/assets/images/Screenshot 2023-05-26 at 10.25.36 AM.png">
 </picture>
 
-# INPUT
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/assets/images/Screenshot 2023-05-26 at 10.40.50 AM.png">
+  <source media="(prefers-color-scheme: light)" srcset="/assets/images/Screenshot 2023-05-26 at 10.40.50 AM.png">
+  <img alt="" src="/assets/images/Screenshot 2023-05-26 at 10.40.50 AM.png">
+</picture>
+
+## INPUT
+<sub>
 ```
  #ifdef DEFAULT_CLANG
 int print(const char *fmt, ...);
@@ -46,9 +52,11 @@ L0:
   return 0;
 }
 ```
+</sub>
 
-# OUTPUT
+## OUTPUT
 
+<sub>
 ```
 ; ModuleID = '<stdin>'
 source_filename = "<stdin>"
@@ -115,3 +123,4 @@ L3:                                               ; preds = %userlbl_L0
 }
 
 ```
+</sub>
