@@ -18,8 +18,8 @@ Graduate School - Compilers Course
 </picture>
 
 ## INPUT
-<sub>
 ```
+<sub>
  #ifdef DEFAULT_CLANG
 int print(const char *fmt, ...);
 #endif
@@ -51,13 +51,14 @@ L0:
         m[0], m[1], m[2], m[3], m[4], m[5]);
   return 0;
 }
-```
 </sub>
+```
 
 ## OUTPUT
 
-<sub>
+
 ```
+<sub>
 ; ModuleID = '<stdin>'
 source_filename = "<stdin>"
 
@@ -121,6 +122,5 @@ L3:                                               ; preds = %userlbl_L0
   %callret = call i32 (i8*, ...) @print(i8* getelementptr inbounds ([37 x i8], [37 x i8]* @0, i32 0, i32 0), double* getelementptr inbounds ([6 x double], [6 x double]* @m, i32 0, i32 0), double* getelementptr inbounds ([6 x double], [6 x double]* @m, i32 0, i32 1), double* getelementptr inbounds ([6 x double], [6 x double]* @m, i32 0, i32 2), double* getelementptr inbounds ([6 x double], [6 x double]* @m, i32 0, i32 3), double* getelementptr inbounds ([6 x double], [6 x double]* @m, i32 0, i32 4), double* getelementptr inbounds ([6 x double], [6 x double]* @m, i32 0, i32 5))
   ret i32 0
 }
-
-```
 </sub>
+```
