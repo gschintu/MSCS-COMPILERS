@@ -1,20 +1,22 @@
 # MSCS-COMPILERS
 Graduate School - Compilers & Runtime Systems Course
 
-## Html2LaTex
-### LaTex parser using lex and yacc
+### Html2LaTex
+LaTex parser using lex and yacc
 
 ## CPASS
-### CPASS is a copy propagation optimizer based on Muchnick Copy Progragation and DFA algorithm
-### IT uses LLVM API Instructions
+1. CPASS is a copy propagation optimizer based on Muchnick Copy Progragation and DFA algorithm
+2. It uses LLVM API Instructions
+3. Project consists in processing C code for 6 different inputs and creating LLVM Intermediate Representation (IR) ensuring local and global optimization.
 
 ## COPT
-### Straightforward project to optimize code for Arrays, Matrices structures and operations. 
+Straightforward project to optimize code for Arrays, Matrices structures and operations.
 
 ## CSEM
-### 1. csem - semantic routines for C programs
-### 2. IT uses LLVM API
-### 3. csem reads a C program (actually a subset of C) from its standard input and compiles it into LLVM intermediate representation (IR) on its standard output. It should support the following program constructs and statements in the C programming language:
+1. csem - semantic routines for C programs
+2. IT uses LLVM API
+3. Project consists on processing C code for 8 different inputs and creating LLVM Intermediate Representation (IR)
+4. csem reads a C program (actually a subset of C) from its standard input and compiles it into LLVM intermediate representation (IR) on its standard output. It should support the following program constructs and statements in the C programming language:
  
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="/assets/images/Screenshot 2023-05-26 at 10.25.36 AM.png">
@@ -28,7 +30,7 @@ Graduate School - Compilers & Runtime Systems Course
   <img alt="" src="/assets/images/Screenshot 2023-05-26 at 10.40.50 AM.png">
 </picture>
 
-## INPUT 8
+### INPUT 8
 ```
  #ifdef DEFAULT_CLANG
 int print(const char *fmt, ...);
@@ -63,7 +65,7 @@ L0:
 }
 ```
 
-## OUTPUT 8
+### OUTPUT 8
 
 
 ```
