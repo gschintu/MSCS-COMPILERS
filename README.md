@@ -1,9 +1,20 @@
 # MSCS-COMPILERS
-Graduate School - Compilers Course
+Graduate School - Compilers & Runtime Systems Course
 
-## COSC 561
-1. csem - semantic routines for C programs
-2. csem reads a C program (actually a subset of C) from its standard input and compiles it into LLVM intermediate representation (IR) on its standard output. It should support the following program constructs and statements in the C programming language:
+## Html2LaTex
+### LaTex parser using lex and yacc
+
+## CPASS
+### CPASS is a copy propagation optimizer based on Muchnick Copy Progragation and DFA algorithm
+### IT uses LLVM API Instructions
+
+## COPT
+### Straightforward project to optimize code for Arrays, Matrices structures and operations. 
+
+## CSEM
+### 1. csem - semantic routines for C programs
+### 2. IT uses LLVM API
+### 3. csem reads a C program (actually a subset of C) from its standard input and compiles it into LLVM intermediate representation (IR) on its standard output. It should support the following program constructs and statements in the C programming language:
  
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="/assets/images/Screenshot 2023-05-26 at 10.25.36 AM.png">
@@ -17,9 +28,8 @@ Graduate School - Compilers Course
   <img alt="" src="/assets/images/Screenshot 2023-05-26 at 10.40.50 AM.png">
 </picture>
 
-## INPUT
+## INPUT 8
 ```
-<sub>
  #ifdef DEFAULT_CLANG
 int print(const char *fmt, ...);
 #endif
@@ -51,14 +61,12 @@ L0:
         m[0], m[1], m[2], m[3], m[4], m[5]);
   return 0;
 }
-</sub>
 ```
 
-## OUTPUT
+## OUTPUT 8
 
 
 ```
-<sub>
 ; ModuleID = '<stdin>'
 source_filename = "<stdin>"
 
@@ -122,5 +130,4 @@ L3:                                               ; preds = %userlbl_L0
   %callret = call i32 (i8*, ...) @print(i8* getelementptr inbounds ([37 x i8], [37 x i8]* @0, i32 0, i32 0), double* getelementptr inbounds ([6 x double], [6 x double]* @m, i32 0, i32 0), double* getelementptr inbounds ([6 x double], [6 x double]* @m, i32 0, i32 1), double* getelementptr inbounds ([6 x double], [6 x double]* @m, i32 0, i32 2), double* getelementptr inbounds ([6 x double], [6 x double]* @m, i32 0, i32 3), double* getelementptr inbounds ([6 x double], [6 x double]* @m, i32 0, i32 4), double* getelementptr inbounds ([6 x double], [6 x double]* @m, i32 0, i32 5))
   ret i32 0
 }
-</sub>
 ```
